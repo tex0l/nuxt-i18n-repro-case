@@ -6,7 +6,7 @@
         nuxt-i18n-repro-case
       </h1>
       <h2 class="subtitle">
-        My cat&#39;s meow Nuxt.js project
+        {{ $t('test') }}
       </h2>
       <div class="links">
         <a

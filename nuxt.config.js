@@ -39,6 +39,29 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-i18n', {
+      locales: [{
+        code: 'fr',
+        iso: 'fr-FR',
+        name: 'Français'
+      }, {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English'
+      }],
+      defaultLocale: 'en',
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: {
+            test: 'english'
+          },
+          fr: {
+            test: 'français'
+          }
+        }
+      }
+    }]
   ],
 
   /*
@@ -49,7 +72,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
